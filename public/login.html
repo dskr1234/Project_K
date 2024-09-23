@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.history.pushState(null, "", window.location.href); 
+        window.onpopstate = function() {
+            window.history.pushState(null, "", window.location.href);
+        };
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <form class="form-container" action="/login" method="POST">
+
+    <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcpZtS76Z240-eZOBcm1PRiGh1siQFD4fLQ&s" class="login-image" alt="login-logo"/>
+    </div>
+    <div>
+    <div class="each-feild">
+    <label for="email" class="label-name">E-mail:</label>
+    <input type="email" placeholder="Enter your email" class="input-box" name="email" required/>
+    </div>
+    <div class="each-feild">
+        <label for="password" class="label-name">Password:</label>
+        <input type="password" placeholder="Enter your Password" class="input-box" name="password" required/>
+        </div>
+        <div id="error-message" style="color: red;"></div>
+    <button class="login-button">Login</button>
+    <div class="new-user-container">
+        <p class="new-user-para">New User?</p>
+        <a href="register.html" class="new-user-link">Register Here!</a>
+    </div>
+    </div>
+</form>
+    </div>
+</body>
+</html>

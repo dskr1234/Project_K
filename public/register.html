@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.history.pushState(null, "", window.location.href); 
+        window.onpopstate = function() {
+            window.history.pushState(null, "", window.location.href);
+        };
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <form class="form-container" action="/register" method="POST">
+    <div>
+    <div class="each-feild">
+    <label for="name" class="label-name">Name:</label>
+    <input type="text" placeholder="Enter your Name" class="input-box" name="name" required/>
+    </div>
+    <div class="each-feild">
+        <label for="phonenumber" class="label-name">Phone Number:</label>
+        <input type="text" placeholder="Enter your Number" class="input-box" name="phonenumber" required/>
+    </div>
+    <div class="each-feild">
+        <label for="email" class="label-name">Email:</label>
+        <input type="email" placeholder="Enter your Email" class="input-box" name="email" required/>
+    </div>
+    <div class="each-feild">
+        <label for="password" class="label-name">Set Password:</label>
+        <input type="password" placeholder="Set your Password" class="input-box" name="password" required/>
+    </div>
+    <button class="login-button" type="submit">Register</button>
+    <div class="new-user-container">
+        <p class="new-user-para">Back to Login?</p>
+        <a href="login.html" class="new-user-link">Login Here!</a>
+    </div>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpbYWaVuQKeO9sUNttyLCBt7qpv9E9cjr7w&s" class="login-image" alt="login-logo"/>
+        </div>
+</form>
+    </div>
+
+</body>
+</html>
